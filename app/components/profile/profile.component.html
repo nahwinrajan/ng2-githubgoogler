@@ -1,3 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <form action="" class="well">
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" [(ngModel)]="username"
+          placeholder="search by github username..." (keyup)="searchUser()">
+      </div>
+    </form>
+  </div>
+</div>
+
 <div *ngIf="user">
   <div class="panel panel-primary">
     <div class="panel-heading">
